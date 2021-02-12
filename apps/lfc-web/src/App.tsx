@@ -7,8 +7,6 @@ import { DashboardLayout } from './layouts';
 import { AuthPage } from './pages/auth';
 import AppConfig from './config/app-config.json';
 
-// const ALLOWED_MODULES: (keyof typeof Modules)[] = ['FARE', 'RIDER'];
-
 type ModulesConfigContextProps = {
 	modulesConfig: (keyof typeof Modules)[];
 };
@@ -27,8 +25,6 @@ export const ModulesConfigProvider: React.FC<{
 	React.useEffect(() => {
 		console.log('App config changed!');
 	}, [AppConfig]);
-
-	console.log('🚀 ~ file: App.tsx ~ line 28 ~ modulesConfig ~ modulesConfig', modulesConfig);
 
 	return <ModulesConfigContext.Provider value={{ modulesConfig }}>{children}</ModulesConfigContext.Provider>;
 };
