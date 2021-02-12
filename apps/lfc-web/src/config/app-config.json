@@ -1,0 +1,12 @@
+{
+	"modules": [
+		{
+			"name": "FARE",
+			"isEnabled": true
+		},
+		{
+			"name": "RIDER",
+			"isEnabled": true
+		}
+	]
+}
