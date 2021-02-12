@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"target": "es5",
+		"allowJs": true,
+		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true
+	},
+	"include": ["src"]
+}
