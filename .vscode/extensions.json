@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-close-tag",
+    "steoates.autoimport",
+    "formulahendry.auto-rename-tag",
+    "mgmcdermott.vscode-language-babel",
+    "coenraads.bracket-pair-colorizer",
+    "streetsidesoftware.code-spell-checker",
+    "mikestead.dotenv",
+    "oderwat.indent-rainbow",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "wayou.vscode-todo-highlight",
+    "britesnow.vscode-toggle-quotes",
+    "chakrounanas.turbo-console-log",
+    "jpoissonnier.vscode-styled-components"
+  ]
+}

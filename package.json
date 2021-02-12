@@ -1,36 +1,39 @@
 {
-  "name": "root",
-  "private": true,
-  "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
-    "bootstrap": "lerna bootstrap --use-workspaces",
-    "storybook": "start-storybook -p 6006 --no-dll",
-    "build-storybook": "build-storybook --no-dll"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "@storybook/addon-actions": "^6.0.28",
-    "@storybook/addon-docs": "^6.0.28",
-    "@storybook/addon-essentials": "^6.0.28",
-    "@storybook/addon-links": "^6.0.28",
-    "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.0.28",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-loader": "^8.2.1",
-    "babel-plugin-styled-components": "^1.11.1",
-    "lerna": "^3.22.1",
-    "prettier": "^2.1.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-is": "^17.0.1",
-    "styled-components": "^5.2.1",
-    "webpack": "^5.4.0"
-  },
-  "dependencies": {}
+	"name": "root",
+	"private": true,
+	"scripts": {
+		"bootstrap": "lerna bootstrap --use-workspaces",
+		"storybook": "start-storybook -p 6006 --no-dll",
+		"build-storybook": "build-storybook --no-dll"
+	},
+	"workspaces": [
+		"apps/*",
+		"shared/*"
+	],
+	"dependencies": {
+		"@babel/cli": "^7.12.1",
+		"@babel/core": "^7.12.3",
+		"@babel/preset-env": "^7.12.1",
+		"@babel/preset-react": "^7.12.5",
+		"@typescript-eslint/eslint-plugin": "^4.14.2",
+		"@typescript-eslint/parser": "^4.14.2",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-loader": "8.1.0",
+		"eslint": "^7.19.0",
+		"eslint-config-airbnb-typescript": "^12.0.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-config-react": "^1.1.7",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-testing-library": "^3.10.1",
+		"lerna": "^3.22.1",
+		"prettier": "^2.2.1",
+		"remove": "^0.1.5",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.1.3",
+		"webpack": "4.44.2"
+	}
 }

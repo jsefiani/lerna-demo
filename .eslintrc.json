@@ -1,0 +1,52 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 10,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"project": "./tsconfig.json"
+	},
+	"extends": [
+		"plugin:import/recommended",
+		"plugin:import/typescript",
+		"plugin:react-hooks/recommended",
+		"airbnb-typescript",
+		"prettier",
+		"prettier/react",
+		"prettier/@typescript-eslint"
+	],
+	"plugins": ["react-hooks", "@typescript-eslint/eslint-plugin", "testing-library"],
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true,
+		"jest": true
+	},
+	"rules": {
+		"import/no-extraneous-dependencies": "off",
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"import/prefer-default-export": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-props-no-spreading": "off",
+		"no-underscore-dangle": "off",
+		"class-methods-use-this": "off",
+		"@typescript-eslint/no-useless-constructor": "off",
+		"no-continue": "off",
+		"arrow-body-style": "off",
+		"func-names": "off",
+		"prefer-destructuring": "off"
+	},
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx"],
+			"parserOptions": {
+				"project": ["tsconfig.json"]
+			}
+		}
+	]
+}
